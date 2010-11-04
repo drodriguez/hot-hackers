@@ -1,0 +1,16 @@
+<% content_for :head do %>
+  <%= javascript_include_tag 'jquery.template' %>
+  <%= javascript_include_tag 'github-badge-launcher' %>
+<% end %>
+
+<%= form_tag matches_url do -%>
+  <%= hidden_field_tag 'match[signature]', @match.signature %>
+  <%= hidden_field_tag 'match[left_hacker_id]', @match.left_hacker.id %>
+  <%= hidden_field_tag 'match[right_hacker_id]', @match.right_hacker.id %>
+
+  <button name="match[winner]" value="<%= @match.left_hacker.id %>">Vote <%= @match.left_hacker.username %></button>
+  <div class="github-badge" data-username="<%= @match.left_hacker.username %>"></div>
+
+  <button name="match[winner]" value="<%= @match.right_hacker.id %>">Vote <%= @match.right_hacker.username %></button>
+  <div class="github-badge" data-username="<%= @match.right_hacker.username %>"></div>  
+<% end -%>

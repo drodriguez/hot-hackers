@@ -1,0 +1,7 @@
+<% form_for @hacker do |f| -%>
+  <% f.object.errors.full_messages.each do |e| %>
+    <p><%= e %></p>
+  <% end %>
+  <%= f.text_field :username %>
+  <%= f.submit 'Create' %>
+<% end -%>
