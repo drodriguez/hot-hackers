@@ -1,0 +1,87 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset"
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base"
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint"
+// Import Compass utilities for lists
+@import "compass/utilities/lists"
+// Import Compass utilities for links
+@import "compass/utilities/links"
+
+// Import partials
+@import "partials/fancy_buttons"
+@import "partials/header"
+@import "partials/footer"
+@import "partials/carousel"
+@import "partials/flash"
+
+// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
+// +blueprint
+
+// wibeets class applies to all the pages of the site, and provides the
+// basic header and footer styles (which will be the same across the site)
+body.hot-hackers
+  +blueprint-typography-body
+  +blueprint-typography-defaults
+  //border-top = 8px "solid" !pale_yellow_color
+  border-top = 4px "solid" !fancy_red_color
+  background-color = !dark_gray_color
+  
+  .inner
+    width = !blueprint_container_size
+    margin: 0 auto
+    +clearfix
+  
+  #header
+    +wibeets-header
+
+  #container
+    background-color = !white_color
+  
+    #wrapper
+      +container
+  
+  #footer
+    +wibeets-footer
+  
+  +flash-messages
+
+//Recommended Blueprint configuration with scoping and semantic layout:
+// +blueprint-typography("body.mainpage")
+// +blueprint-scaffolding("body.mainpage")
+body.mainpage
+  // +blueprint-utilities
+  // +blueprint-debug
+  // +blueprint-interaction
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+  
+  #main
+    !main_columns = ceil(2 * !blueprint_grid_columns / 3)
+    +column(!main_columns)
+    +prepend-top
+    +append-bottom
+  
+  #sidebar
+    !sidebar_columns = floor(!blueprint_grid_columns / 3) - 1
+    +column(!sidebar_columns, true)
+    +prepend-top
+    +append-bottom
+    +append(1)
+    
+  #carousel
+    +carousel
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body.simetric
+  #sidebar
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    !sidebar_columns = floor(!blueprint_grid_columns / 3)
+    +column(!sidebar_columns)
+  #content
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    !content_columns = ceil(2 * !blueprint_grid_columns / 3)
+    // true means it's the last column in the row
+    +column(!content_columns, true)

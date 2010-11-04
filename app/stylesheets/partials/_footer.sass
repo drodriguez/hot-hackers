@@ -1,0 +1,48 @@
+=wibeets-footer
+  border-top = 4px "solid" !light_gray_color
+  background:
+    color = !dark_gray_color
+    image: url(/images/css/footer-gradient.png)
+    repeat: repeat-x
+  color = !white_color
+  min-height: 200px
+  
+  #about-us-col, #follow-us-col
+    +prepend-top
+    
+    ul
+      padding-left: 0
+    
+    a
+      +hover-link
+      +link-colors(#fff)
+  
+  #image-col
+    +column(3)
+    +prepend-top(8px)
+    height: 36px
+    background:
+      image: url(/images/css/footer-logo.png)
+      repeat: no-repeat
+    
+    span
+      display: none
+
+  #about-us-col
+    +column(7)
+
+  #follow-us-col
+    +column(7, true)
+  
+  #about-us-col, #follow-us-col
+    h3
+      color = !white_color
+      border-bottom = 2px "solid" !pale_yellow_color
+    
+    ul
+      +no-bullets
+      margin: 0
+
+  #copyright
+    +column(!blueprint_grid_columns)
+    text-align: right

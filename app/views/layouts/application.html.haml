@@ -1,0 +1,18 @@
+!!! 5
+%html{ 'lang' => 'en' }
+  %head
+    = render 'shared/head_contents'
+    = yield :head
+  %body.hot-hackers.mainpage
+    = render 'shared/header'
+    #container
+      #wrapper
+        = render 'shared/flash'
+        #main
+          = yield
+        #sidebar
+          = yield :sidebar
+    #footer
+      .inner
+        = render 'shared/footer'
+    =yield :body_end

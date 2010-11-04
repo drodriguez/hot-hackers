@@ -1,0 +1,56 @@
+=wibeets-header
+  background:
+    image: url(/images/css/header-bg.png)
+    repeat: no-repeat
+    color = !beet_color
+  border-bottom = 1px "solid" !dark_gray_color
+  height = 4 * 18px
+  
+  h1
+    +column(6)
+    height: 72px
+    margin-bottom: 0
+    
+    a, a:hover, a:visited, a:active
+      +column(6)
+      height: 72px
+      color: #ffffff
+      text-decoration: none
+  
+  #user-navigation
+    +column(9, true)
+    +prepend(9)
+    +prepend-top(1.25em)
+    
+    label
+      color = !white_color
+    
+    form.formtastic fieldset > ol > li
+      margin-bottom: 0
+      width: 100%
+    
+    form.formtastic fieldset.inputs
+      +column(6)
+    
+    form.formtastic fieldset > ol > li label
+      width: 28%
+      text-align: right
+      padding-right: 2%
+    
+    form.formtastic fieldset > ol > li.string input,
+    form.formtastic fieldset > ol > li.password input
+      max-width: 68%
+    
+    form.formtastic fieldset.buttons
+      +column(3, true)
+      padding-left: 0
+      
+      ol > li
+        margin-bottom: 0.75em
+      
+      button
+        +fancy-button
+      
+      a
+        +hover-link
+        +link-colors(#fff)
