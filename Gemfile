@@ -4,14 +4,14 @@ gem 'rails', '3.0.1'
 gem 'httparty'
 gem 'will_paginate', '~> 3.0.pre'
 gem "haml"
-gem "compass", :require => false
-gem "fancy-buttons", :require => false
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem "compass"
+  gem "fancy-buttons"
 end
 
 # Use unicorn as the web server

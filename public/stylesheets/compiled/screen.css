@@ -1,56 +1,713 @@
-/*
-Syntax error: Undefined mixin 'fancy-button'.
-        on line 53 of /home/boston/development/hot-hackers/app/stylesheets/screen.sass, in `fancy-button'
-        from line 53 of /home/boston/development/hot-hackers/app/stylesheets/screen.sass
+/* line 4, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/home/boston/development/hot-hackers/app/stylesheets/screen.sass:53:in `fancy-button'
-/home/boston/development/hot-hackers/app/stylesheets/screen.sass:53
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/mixin_node.rb:74:in `perform!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:305:in `_perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:213:in `perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `perform_children'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `map'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `perform_children'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:317:in `perform!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/rule_node.rb:191:in `perform!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:305:in `_perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:213:in `perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `perform_children'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `map'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `perform_children'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:317:in `perform!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/rule_node.rb:191:in `perform!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:305:in `_perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:213:in `perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `perform_children'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `map'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:326:in `perform_children'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:317:in `perform!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/root_node.rb:59:in `perform!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:305:in `_perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/node.rb:213:in `perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/root_node.rb:37:in `perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/tree/root_node.rb:29:in `render'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/engine.rb:197:in `_render'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/haml-3.0.23/lib/sass/engine.rb:168:in `render'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/compiler.rb:103:in `compile'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/logger.rb:43:in `red'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/compiler.rb:102:in `compile'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/compiler.rb:93:in `compile_if_required'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/compiler.rb:84:in `run'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `each'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `run'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/commands/update_project.rb:33:in `perform'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/commands/base.rb:18:in `execute'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/commands/project_base.rb:19:in `execute'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:38:in `perform!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/gems/compass-0.10.6/bin/compass:26
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/bin/compass:19:in `load'
-/home/boston/.rvm/gems/ree-1.8.7-2010.02@global/bin/compass:19
-*/
-body:before {
+/* line 6, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+/* line 45, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 20, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* incase an inverted custom gradient isn't specified */
+/* line 176, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class, body.hot-hackers button.fancy {
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  background: url('/images/button_bg.png?1288950921') repeat-x bottom left;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: bold;
+}
+/* line 165, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class::-moz-focus-inner, body.hot-hackers button.fancy::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 168, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class:focus, body.hot-hackers button.fancy:focus {
+  outline: none;
+}
+
+/* line 25, ../../../app/stylesheets/screen.sass */
+body.hot-hackers {
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 75%;
+  border-top: 4px solid #d7572e;
+  background-color: #333333;
+}
+/* line 68, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers h1, body.hot-hackers h2, body.hot-hackers h3, body.hot-hackers h4, body.hot-hackers h5, body.hot-hackers h6 {
+  font-weight: normal;
+  color: #222222;
+}
+/* line 69, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers h1 img, body.hot-hackers h2 img, body.hot-hackers h3 img, body.hot-hackers h4 img, body.hot-hackers h5 img, body.hot-hackers h6 img {
+  margin: 0;
+}
+/* line 70, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.50em;
+}
+/* line 71, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+/* line 72, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1.00em;
+}
+/* line 73, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+/* line 74, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.50em;
+}
+/* line 75, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+/* line 76, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers p {
+  margin: 0 0 1.5em;
+}
+/* line 77, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers p img.left {
+  display: inline;
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+/* line 78, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers p img.right {
+  display: inline;
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+/* line 80, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers a {
+  text-decoration: underline;
+  color: #000099;
+}
+/* line 18, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body.hot-hackers a:visited {
+  color: #000066;
+}
+/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body.hot-hackers a:focus {
+  color: black;
+}
+/* line 26, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body.hot-hackers a:hover {
+  color: black;
+}
+/* line 30, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body.hot-hackers a:active {
+  color: #cc0099;
+}
+/* line 81, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers blockquote {
+  margin: 1.5em;
+  color: #666666;
+  font-style: italic;
+}
+/* line 82, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers strong {
+  font-weight: bold;
+}
+/* line 83, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers em {
+  font-style: italic;
+}
+/* line 84, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers dfn {
+  font-style: italic;
+  font-weight: bold;
+}
+/* line 85, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers sup, body.hot-hackers sub {
+  line-height: 0;
+}
+/* line 86, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers abbr, body.hot-hackers acronym {
+  border-bottom: 1px dotted #666666;
+}
+/* line 87, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+/* line 88, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers del {
+  color: #666666;
+}
+/* line 89, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers pre {
+  margin: 1.5em 0;
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'fancy-button'.\A         on line 53 of /home/boston/development/hot-hackers/app/stylesheets/screen.sass, in `fancy-button'\A         from line 53 of /home/boston/development/hot-hackers/app/stylesheets/screen.sass"; }
+}
+/* line 90, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers pre, body.hot-hackers code, body.hot-hackers tt {
+  font: 1em "andale mono", "lucida console", monospace;
+  line-height: 1.5;
+}
+/* line 91, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers li ul, body.hot-hackers li ol {
+  margin: 0;
+}
+/* line 92, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers ul, body.hot-hackers ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 3.333em;
+}
+/* line 93, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers ul {
+  list-style-type: disc;
+}
+/* line 94, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers ol {
+  list-style-type: decimal;
+}
+/* line 95, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers dl {
+  margin: 0 0 1.5em 0;
+}
+/* line 96, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers dl dt {
+  font-weight: bold;
+}
+/* line 97, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers dd {
+  margin-left: 1.5em;
+}
+/* line 98, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+/* line 99, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers th {
+  font-weight: bold;
+}
+/* line 100, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers thead th {
+  background: #c3d9ff;
+}
+/* line 101, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers th, body.hot-hackers td, body.hot-hackers caption {
+  padding: 4px 10px 4px 5px;
+}
+/* line 102, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers tr.even td {
+  background: #e5ecf9;
+}
+/* line 103, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers tfoot {
+  font-style: italic;
+}
+/* line 104, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers caption {
+  background: #eeeeee;
+}
+/* line 105, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers .quiet {
+  color: #666666;
+}
+/* line 106, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body.hot-hackers .loud {
+  color: #111111;
+}
+/* line 32, ../../../app/stylesheets/screen.sass */
+body.hot-hackers .inner {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 37, ../../../app/stylesheets/screen.sass */
+body.hot-hackers #header {
+  background-image: url(/images/css/header-bg.png);
+  background-repeat: no-repeat;
+  background-color: #841933;
+  border-bottom: 1px solid #333333;
+  height: 72px;
+}
+/* line 9, ../../../app/stylesheets/partials/_header.sass */
+body.hot-hackers #header h1 {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  height: 72px;
+  margin-bottom: 0;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.hot-hackers #header h1 {
+  overflow-x: hidden;
+}
+/* line 14, ../../../app/stylesheets/partials/_header.sass */
+body.hot-hackers #header h1 a, body.hot-hackers #header h1 a:hover, body.hot-hackers #header h1 a:visited, body.hot-hackers #header h1 a:active {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  height: 72px;
+  color: white;
+  text-decoration: none;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.hot-hackers #header h1 a, * html body.hot-hackers #header h1 a:hover, * html body.hot-hackers #header h1 a:visited, * html body.hot-hackers #header h1 a:active {
+  overflow-x: hidden;
+}
+/* line 40, ../../../app/stylesheets/screen.sass */
+body.hot-hackers #container {
+  background-color: white;
+}
+/* line 43, ../../../app/stylesheets/screen.sass */
+body.hot-hackers #container #wrapper {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 46, ../../../app/stylesheets/screen.sass */
+body.hot-hackers #footer {
+  border-top: 4px solid #aaaaaa;
+  background-color: #333333;
+  background-image: url(/images/css/footer-gradient.png);
+  background-repeat: repeat-x;
+  color: white;
+  min-height: 200px;
+}
+/* line 10, ../../../app/stylesheets/partials/_footer.sass */
+body.hot-hackers #footer #links-col {
+  margin-top: 1.5em;
+}
+/* line 13, ../../../app/stylesheets/partials/_footer.sass */
+body.hot-hackers #footer #links-col ul {
+  padding-left: 0;
+}
+/* line 16, ../../../app/stylesheets/partials/_footer.sass */
+body.hot-hackers #footer #links-col a {
+  text-decoration: none;
+  color: white;
+}
+/* line 4, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
+body.hot-hackers #footer #links-col a:hover {
+  text-decoration: underline;
+}
+/* line 20, ../../../app/stylesheets/partials/_footer.sass */
+body.hot-hackers #footer #links-col {
+  padding-left: 120px;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 270px;
+  padding-right: 280px;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.hot-hackers #footer #links-col {
+  overflow-x: hidden;
+}
+/* line 25, ../../../app/stylesheets/partials/_footer.sass */
+body.hot-hackers #footer #links-col h3 {
+  color: white;
+  border-bottom: 2px solid #ffcb7a;
+}
+/* line 29, ../../../app/stylesheets/partials/_footer.sass */
+body.hot-hackers #footer #links-col ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 11, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
+body.hot-hackers #footer #links-col ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+/* line 33, ../../../app/stylesheets/partials/_footer.sass */
+body.hot-hackers #footer #copyright {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  text-align: right;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.hot-hackers #footer #copyright {
+  overflow-x: hidden;
+}
+/* line 3, ../../../app/stylesheets/partials/_flash.sass */
+body.hot-hackers .flash .message {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align: center;
+  margin: 1.5em auto 0;
+}
+/* line 9, ../../../app/stylesheets/partials/_flash.sass */
+body.hot-hackers .flash .message p {
+  margin: 0;
+}
+/* line 12, ../../../app/stylesheets/partials/_flash.sass */
+body.hot-hackers .flash .error {
+  border: 1px solid #ffbbbb;
+  background-color: #ffdddd;
+}
+/* line 16, ../../../app/stylesheets/partials/_flash.sass */
+body.hot-hackers .flash .warning {
+  border: 1px solid #fffaaa;
+  background-color: #ffffcc;
+}
+/* line 20, ../../../app/stylesheets/partials/_flash.sass */
+body.hot-hackers .flash .notice, body.hot-hackers .flash .success {
+  border: 1px solid #1fdf00;
+  background-color: #bbffb6;
+}
+/* line 51, ../../../app/stylesheets/screen.sass */
+body.hot-hackers button.fancy {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #989898), color-stop(10%, #6a6a6a), color-stop(50%, #3c3c3c), color-stop(50%, #353535), color-stop(100%, #4e4e4e));
+  background-image: -moz-linear-gradient(top, #989898 0%, #6a6a6a 10%, #3c3c3c 50%, #353535 50%, #4e4e4e 100%);
+  background-image: linear-gradient(top, #989898 0%, #6a6a6a 10%, #3c3c3c 50%, #353535 50%, #4e4e4e 100%);
+  border-color: #1e1e1e;
+  text-shadow: #040404 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.hot-hackers button.fancy, body.hot-hackers button.fancy:visited {
+  color: white;
+}
+/* line 31, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.hot-hackers button.fancy:hover, body.hot-hackers button.fancy:focus {
+  background-color: #3c3c3c;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #919191), color-stop(10%, #636363), color-stop(50%, #353535), color-stop(50%, #2d2d2d), color-stop(100%, #474747));
+  background-image: -moz-linear-gradient(top, #919191 0%, #636363 10%, #353535 50%, #2d2d2d 50%, #474747 100%);
+  background-image: linear-gradient(top, #919191 0%, #636363 10%, #353535 50%, #2d2d2d 50%, #474747 100%);
+  border-color: #161616;
+  text-shadow: black 0px 1px 1px;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.hot-hackers button.fancy:hover, body.hot-hackers button.fancy:hover:visited, body.hot-hackers button.fancy:focus, body.hot-hackers button.fancy:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.hot-hackers button.fancy:active {
+  background-color: #353535;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #353535), color-stop(30%, #3a3a3a), color-stop(50%, #303030), color-stop(50%, #282828), color-stop(100%, #494949));
+  background-image: -moz-linear-gradient(top, #353535 0%, #3a3a3a 30%, #303030 50%, #282828 50%, #494949 100%);
+  background-image: linear-gradient(top, #353535 0%, #3a3a3a 30%, #303030 50%, #282828 50%, #494949 100%);
+  border-color: #0e0e0e;
+  text-shadow: black 0px -1px -1px;
+  -moz-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.hot-hackers button.fancy:active, body.hot-hackers button.fancy:active:visited {
+  color: white;
+}
+/* line 55, ../../../app/stylesheets/screen.sass */
+body.hot-hackers table.hackers-ranking .position-col, body.hot-hackers table.hackers-ranking .ranking-col {
+  width: 6em;
+}
+/* line 57, ../../../app/stylesheets/screen.sass */
+body.hot-hackers table.hackers-ranking img.gravatar {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+/* line 63, ../../../app/stylesheets/screen.sass */
+body.hot-hackers div.left-hacker img.gravatar, body.hot-hackers div.right-hacker img.gravatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  width: 128px;
+  height: 128px;
+}
+
+/* line 82, ../../../app/stylesheets/screen.sass */
+body.mainpage #main {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.mainpage #main {
+  overflow-x: hidden;
+}
+/* line 89, ../../../app/stylesheets/screen.sass */
+body.mainpage div.left-hacker {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.mainpage div.left-hacker {
+  overflow-x: hidden;
+}
+/* line 93, ../../../app/stylesheets/screen.sass */
+body.mainpage div.right-hacker {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 470px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.mainpage div.right-hacker {
+  overflow-x: hidden;
+}
+/* line 99, ../../../app/stylesheets/screen.sass */
+body.mainpage div.left-hacker button.fancy, body.mainpage div.right-hacker button.fancy {
+  width: 470px;
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+/* line 104, ../../../app/stylesheets/screen.sass */
+body.mainpage div.left-hacker button.fancy {
+  background-color: #3ab700;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #9ee080), color-stop(10%, #66ce36), color-stop(50%, #418721), color-stop(50%, #3b7b1e), color-stop(100%, #4fa428));
+  background-image: -moz-linear-gradient(top, #9ee080 0%, #66ce36 10%, #418721 50%, #3b7b1e 50%, #4fa428 100%);
+  background-image: linear-gradient(top, #9ee080 0%, #66ce36 10%, #418721 50%, #3b7b1e 50%, #4fa428 100%);
+  border-color: #295615;
+  text-shadow: #123800 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.359) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.359) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.359) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.359) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.left-hacker button.fancy, body.mainpage div.left-hacker button.fancy:visited {
+  color: white;
+}
+/* line 31, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.left-hacker button.fancy:hover, body.mainpage div.left-hacker button.fancy:focus {
+  background-color: #35a800;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #95dd73), color-stop(10%, #5fc430), color-stop(50%, #3b7b1e), color-stop(50%, #356e1b), color-stop(100%, #499725));
+  background-image: -moz-linear-gradient(top, #95dd73 0%, #5fc430 10%, #3b7b1e 50%, #356e1b 50%, #499725 100%);
+  background-image: linear-gradient(top, #95dd73 0%, #5fc430 10%, #3b7b1e 50%, #356e1b 50%, #499725 100%);
+  border-color: #234912;
+  text-shadow: #0d2800 0px 1px 1px;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.left-hacker button.fancy:hover, body.mainpage div.left-hacker button.fancy:hover:visited, body.mainpage div.left-hacker button.fancy:focus, body.mainpage div.left-hacker button.fancy:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.left-hacker button.fancy:active {
+  background-color: #309900;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #3b7b1e), color-stop(30%, #3f8320), color-stop(50%, #37721c), color-stop(50%, #316619), color-stop(100%, #4b9b26));
+  background-image: -moz-linear-gradient(top, #3b7b1e 0%, #3f8320 30%, #37721c 50%, #316619 50%, #4b9b26 100%);
+  background-image: linear-gradient(top, #3b7b1e 0%, #3f8320 30%, #37721c 50%, #316619 50%, #4b9b26 100%);
+  border-color: #1e3d0f;
+  text-shadow: #081900 0px -1px -1px;
+  -moz-box-shadow: #295615 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #295615 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #295615 0 0.08em 0.1em 1px inset;
+  box-shadow: #295615 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.left-hacker button.fancy:active, body.mainpage div.left-hacker button.fancy:active:visited {
+  color: white;
+}
+/* line 106, ../../../app/stylesheets/screen.sass */
+body.mainpage div.right-hacker button.fancy {
+  background-color: #0058b7;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #80aee0), color-stop(10%, #367fce), color-stop(50%, #215287), color-stop(50%, #1e4b7b), color-stop(100%, #2864a4));
+  background-image: -moz-linear-gradient(top, #80aee0 0%, #367fce 10%, #215287 50%, #1e4b7b 50%, #2864a4 100%);
+  background-image: linear-gradient(top, #80aee0 0%, #367fce 10%, #215287 50%, #1e4b7b 50%, #2864a4 100%);
+  border-color: #153456;
+  text-shadow: #001b38 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.359) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.359) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.359) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.359) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.right-hacker button.fancy, body.mainpage div.right-hacker button.fancy:visited {
+  color: white;
+}
+/* line 31, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.right-hacker button.fancy:hover, body.mainpage div.right-hacker button.fancy:focus {
+  background-color: #0051a8;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #73a6dd), color-stop(10%, #3078c4), color-stop(50%, #1e4b7b), color-stop(50%, #1b436e), color-stop(100%, #255c97));
+  background-image: -moz-linear-gradient(top, #73a6dd 0%, #3078c4 10%, #1e4b7b 50%, #1b436e 50%, #255c97 100%);
+  background-image: linear-gradient(top, #73a6dd 0%, #3078c4 10%, #1e4b7b 50%, #1b436e 50%, #255c97 100%);
+  border-color: #122d49;
+  text-shadow: #001428 0px 1px 1px;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.right-hacker button.fancy:hover, body.mainpage div.right-hacker button.fancy:hover:visited, body.mainpage div.right-hacker button.fancy:focus, body.mainpage div.right-hacker button.fancy:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.right-hacker button.fancy:active {
+  background-color: #004a99;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #1e4b7b), color-stop(30%, #205083), color-stop(50%, #1c4672), color-stop(50%, #193e66), color-stop(100%, #265f9b));
+  background-image: -moz-linear-gradient(top, #1e4b7b 0%, #205083 30%, #1c4672 50%, #193e66 50%, #265f9b 100%);
+  background-image: linear-gradient(top, #1e4b7b 0%, #205083 30%, #1c4672 50%, #193e66 50%, #265f9b 100%);
+  border-color: #0f253d;
+  text-shadow: #000c19 0px -1px -1px;
+  -moz-box-shadow: #153456 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #153456 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #153456 0 0.08em 0.1em 1px inset;
+  box-shadow: #153456 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+body.mainpage div.right-hacker button.fancy:active, body.mainpage div.right-hacker button.fancy:active:visited {
+  color: white;
+}
+
+/* line 112, ../../../app/stylesheets/screen.sass */
+body.simetric #sidebar {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.simetric #sidebar {
+  overflow-x: hidden;
+}
+/* line 116, ../../../app/stylesheets/screen.sass */
+body.simetric #content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+}
+/* line 139, ../../../../../.rvm/gems/ree-1.8.7-2010.02@hot-hackers/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.simetric #content {
+  overflow-x: hidden;
+}

@@ -15,7 +15,6 @@
 // Import partials
 @import "partials/header"
 @import "partials/footer"
-@import "partials/carousel"
 @import "partials/flash"
 
 // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
@@ -29,24 +28,24 @@ body.hot-hackers
   //border-top = 8px "solid" !pale_yellow_color
   border-top = 4px "solid" !fancy_red_color
   background-color = !dark_gray_color
-  
+
   .inner
     width = !blueprint_container_size
     margin: 0 auto
     +clearfix
-  
+
   #header
     +hot-hackers-header
 
   #container
     background-color = !white_color
-  
+
     #wrapper
       +container
-  
+
   #footer
     +hot-hackers-footer
-  
+
   +flash-messages
 
   button.fancy
@@ -79,7 +78,7 @@ body.mainpage
   // +blueprint-interaction
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
-  
+
   #main
     !main_columns = !blueprint_grid_columns
     +column(!main_columns)
@@ -106,7 +105,7 @@ body.mainpage
     +fancy-button-colors(darken(#57b42c, 8))
   div.right-hacker button.fancy
     +fancy-button-colors(adjust_hue(darken(#57b42c, 8), 110))
-      
+
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.simetric
