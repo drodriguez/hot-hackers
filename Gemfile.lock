@@ -36,6 +36,8 @@ GEM
     crack (0.1.8)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    fancy-buttons (1.0.4)
+      compass (>= 0.10.6)
     haml (3.0.23)
     httparty (0.6.1)
       crack (= 0.1.8)
@@ -78,6 +80,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  fancy-buttons
   haml
   httparty
   rails (= 3.0.1)

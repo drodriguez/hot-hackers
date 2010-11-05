@@ -7,7 +7,7 @@
   color = !white_color
   min-height: 200px
   
-  #about-us-col, #follow-us-col
+  #links-col
     +prepend-top
     
     ul
@@ -17,24 +17,11 @@
       +hover-link
       +link-colors(#fff)
   
-  #image-col
-    +column(3)
-    +prepend-top(8px)
-    height: 36px
-    background:
-      image: url(/images/css/footer-logo.png)
-      repeat: no-repeat
-    
-    span
-      display: none
-
-  #about-us-col
-    +column(7)
-
-  #follow-us-col
+  #links-col
+    +prepend(3)
     +column(7, true)
-  
-  #about-us-col, #follow-us-col
+    +append(7)
+    
     h3
       color = !white_color
       border-bottom = 2px "solid" !pale_yellow_color
@@ -44,5 +31,5 @@
       margin: 0
 
   #copyright
-    +column(!blueprint_grid_columns)
+    +column(!blueprint_grid_columns, true)
     text-align: right

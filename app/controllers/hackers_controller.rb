@@ -11,8 +11,7 @@ class HackersController < ApplicationController
     @hacker = Hacker.new(params[:hacker])
 
     if @hacker.save
-      flash[:notice] = 'Hacker created!'
-      redirect_to root_url
+      redirect_to root_url, :notice => 'Hacker created!'
     else
       render :new
     end

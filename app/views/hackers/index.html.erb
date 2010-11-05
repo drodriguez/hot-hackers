@@ -1,1 +1,13 @@
-<%= render @hackers %>
+<h1>Who’s the hottest hacker of them all?</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Username</th>
+      <th>Ranking</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @hackers, :offset => @hackers.offset + 1 %>
+  </tbody>
+</table>

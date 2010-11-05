@@ -8,9 +8,13 @@
   <%= hidden_field_tag 'match[left_hacker_id]', @match.left_hacker.id %>
   <%= hidden_field_tag 'match[right_hacker_id]', @match.right_hacker.id %>
 
-  <button name="match[winner]" value="<%= @match.left_hacker.id %>">Vote <%= @match.left_hacker.username %></button>
-  <div class="github-badge" data-username="<%= @match.left_hacker.username %>"></div>
+  <div class="left-hacker">
+    <button class="fancy" name="match[winner]" value="<%= @match.left_hacker.id %>">Vote for <%= @match.left_hacker.username %></button>
+    <div class="github-badge" data-username="<%= @match.left_hacker.username %>"></div>
+  </div>
 
-  <button name="match[winner]" value="<%= @match.right_hacker.id %>">Vote <%= @match.right_hacker.username %></button>
-  <div class="github-badge" data-username="<%= @match.right_hacker.username %>"></div>  
+  <div class="right-hacker">
+    <button class="fancy" name="match[winner]" value="<%= @match.right_hacker.id %>">Vote for <%= @match.right_hacker.username %></button>
+    <div class="github-badge" data-username="<%= @match.right_hacker.username %>"></div>  
+  </div>
 <% end -%>
