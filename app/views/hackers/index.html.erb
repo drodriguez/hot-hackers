@@ -11,3 +11,5 @@
     <%= render @hackers, :offset => @hackers.offset + 1 %>
   </tbody>
 </table>
+
+<%= will_paginate @hackers, :page_links => false %>
