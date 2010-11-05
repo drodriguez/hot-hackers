@@ -13,11 +13,11 @@
 ActiveRecord::Schema.define(:version => 20101105153639) do
 
   create_table "hackers", :force => true do |t|
-    t.string   "username",                      :null => false
-    t.string   "gravatar_id"
-    t.integer  "ranking",     :default => 1500
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "username",                      :null => false
+    t.string    "gravatar_id"
+    t.integer   "ranking",     :default => 1500
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   add_index "hackers", ["ranking"], :name => "index_hackers_on_ranking"
