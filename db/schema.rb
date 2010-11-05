@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101104124920) do
+ActiveRecord::Schema.define(:version => 20101105153639) do
 
   create_table "hackers", :force => true do |t|
     t.string   "username",                      :null => false
