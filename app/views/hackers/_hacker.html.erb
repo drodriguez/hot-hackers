@@ -1,5 +1,8 @@
 <tr>
-  <td><%= offset + hacker_counter %></td>
-  <td><%= hacker.username %></td>
-  <td><%= hacker.ranking %></td>
+  <td class="position-col"><%= offset + hacker_counter %></td>
+  <td>
+    <img class="gravatar" src="<%= gravatar_url(hacker.gravatar_id, 's' => 40)%>">
+    <%= link_to hacker.username, github_url(hacker.username) %>
+  </td>
+  <td class="ranking-col"><%= hacker.ranking %></td>
 </tr>

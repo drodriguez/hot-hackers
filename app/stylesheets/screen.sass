@@ -52,6 +52,24 @@ body.hot-hackers
   button.fancy
     +fancy-button
 
+  table.hackers-ranking
+    .position-col, .ranking-col
+      width: 6em
+    img.gravatar
+      width: 40px
+      height: 40px
+      vertical-align: middle
+
+  div.left-hacker, div.right-hacker
+    img.gravatar
+      display: block
+      margin:
+        left: auto
+        right: auto
+      +append-bottom
+      width: 128px
+      height: 128px
+
 //Recommended Blueprint configuration with scoping and semantic layout:
 // +blueprint-typography("body.mainpage")
 // +blueprint-scaffolding("body.mainpage")

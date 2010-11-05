@@ -9,11 +9,13 @@
   <%= hidden_field_tag 'match[right_hacker_id]', @match.right_hacker.id %>
 
   <div class="left-hacker">
+    <img class="gravatar" src="<%= gravatar_url(@match.left_hacker.gravatar_id, 's' => 128)%>">
     <button class="fancy" name="match[winner]" value="<%= @match.left_hacker.id %>">Vote for <%= @match.left_hacker.username %></button>
     <div class="github-badge" data-username="<%= @match.left_hacker.username %>"></div>
   </div>
 
   <div class="right-hacker">
+    <img class="gravatar" src="<%= gravatar_url(@match.right_hacker.gravatar_id, 's' => 128)%>">
     <button class="fancy" name="match[winner]" value="<%= @match.right_hacker.id %>">Vote for <%= @match.right_hacker.username %></button>
     <div class="github-badge" data-username="<%= @match.right_hacker.username %>"></div>  
   </div>
