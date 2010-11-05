@@ -1,4 +1,4 @@
-<tr>
+<tr class="<%= class_for_hacker_row(offset + hacker_counter) %>">
   <td class="position-col"><%= offset + hacker_counter %></td>
   <td>
     <img class="gravatar" src="<%= gravatar_url(hacker.gravatar_id, 's' => 40)%>">

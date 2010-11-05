@@ -518,16 +518,28 @@ body.hot-hackers button.fancy:active, body.hot-hackers button.fancy:active:visit
   color: white;
 }
 /* line 55, ../../../app/stylesheets/screen.sass */
-body.hot-hackers table.hackers-ranking .position-col, body.hot-hackers table.hackers-ranking .ranking-col {
-  width: 6em;
+body.hot-hackers table.hackers-ranking tr.first {
+  font-size: 3em;
 }
 /* line 57, ../../../app/stylesheets/screen.sass */
+body.hot-hackers table.hackers-ranking tr.second {
+  font-size: 2em;
+}
+/* line 59, ../../../app/stylesheets/screen.sass */
+body.hot-hackers table.hackers-ranking tr.third {
+  font-size: 1.5em;
+}
+/* line 61, ../../../app/stylesheets/screen.sass */
+body.hot-hackers table.hackers-ranking .position-col, body.hot-hackers table.hackers-ranking .ranking-col {
+  width: 100px;
+}
+/* line 63, ../../../app/stylesheets/screen.sass */
 body.hot-hackers table.hackers-ranking img.gravatar {
   width: 40px;
   height: 40px;
   vertical-align: middle;
 }
-/* line 63, ../../../app/stylesheets/screen.sass */
+/* line 69, ../../../app/stylesheets/screen.sass */
 body.hot-hackers div.left-hacker img.gravatar, body.hot-hackers div.right-hacker img.gravatar {
   display: block;
   margin-left: auto;
@@ -537,7 +549,7 @@ body.hot-hackers div.left-hacker img.gravatar, body.hot-hackers div.right-hacker
   height: 128px;
 }
 
-/* line 82, ../../../app/stylesheets/screen.sass */
+/* line 88, ../../../app/stylesheets/screen.sass */
 body.mainpage #main {
   display: inline;
   float: left;
@@ -550,7 +562,7 @@ body.mainpage #main {
 * html body.mainpage #main {
   overflow-x: hidden;
 }
-/* line 89, ../../../app/stylesheets/screen.sass */
+/* line 95, ../../../app/stylesheets/screen.sass */
 body.mainpage div.left-hacker {
   display: inline;
   float: left;
@@ -563,7 +575,7 @@ body.mainpage div.left-hacker {
 * html body.mainpage div.left-hacker {
   overflow-x: hidden;
 }
-/* line 93, ../../../app/stylesheets/screen.sass */
+/* line 99, ../../../app/stylesheets/screen.sass */
 body.mainpage div.right-hacker {
   display: inline;
   float: left;
@@ -576,13 +588,13 @@ body.mainpage div.right-hacker {
 * html body.mainpage div.right-hacker {
   overflow-x: hidden;
 }
-/* line 99, ../../../app/stylesheets/screen.sass */
+/* line 105, ../../../app/stylesheets/screen.sass */
 body.mainpage div.left-hacker button.fancy, body.mainpage div.right-hacker button.fancy {
   width: 470px;
   font-size: 2em;
   margin-bottom: 0.75em;
 }
-/* line 104, ../../../app/stylesheets/screen.sass */
+/* line 110, ../../../app/stylesheets/screen.sass */
 body.mainpage div.left-hacker button.fancy {
   background-color: #3ab700;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #9ee080), color-stop(10%, #66ce36), color-stop(50%, #418721), color-stop(50%, #3b7b1e), color-stop(100%, #4fa428));
@@ -635,7 +647,7 @@ body.mainpage div.left-hacker button.fancy:active {
 body.mainpage div.left-hacker button.fancy:active, body.mainpage div.left-hacker button.fancy:active:visited {
   color: white;
 }
-/* line 106, ../../../app/stylesheets/screen.sass */
+/* line 112, ../../../app/stylesheets/screen.sass */
 body.mainpage div.right-hacker button.fancy {
   background-color: #0058b7;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #80aee0), color-stop(10%, #367fce), color-stop(50%, #215287), color-stop(50%, #1e4b7b), color-stop(100%, #2864a4));
@@ -689,7 +701,7 @@ body.mainpage div.right-hacker button.fancy:active, body.mainpage div.right-hack
   color: white;
 }
 
-/* line 112, ../../../app/stylesheets/screen.sass */
+/* line 118, ../../../app/stylesheets/screen.sass */
 body.simetric #sidebar {
   display: inline;
   float: left;
@@ -700,7 +712,7 @@ body.simetric #sidebar {
 * html body.simetric #sidebar {
   overflow-x: hidden;
 }
-/* line 116, ../../../app/stylesheets/screen.sass */
+/* line 122, ../../../app/stylesheets/screen.sass */
 body.simetric #content {
   display: inline;
   float: left;
