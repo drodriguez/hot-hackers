@@ -31,13 +31,17 @@ GEM
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
+    cgi_multipart_eof_fix (2.5.0)
     compass (0.10.6)
       haml (>= 3.0.4)
     crack (0.1.8)
+    daemons (1.1.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     fancy-buttons (1.0.4)
       compass (>= 0.10.6)
+    fastthread (1.0.7)
+    gem_plugin (0.2.3)
     haml (3.0.23)
     httparty (0.6.1)
       crack (= 0.1.8)
@@ -48,6 +52,11 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -83,6 +92,7 @@ DEPENDENCIES
   fancy-buttons
   haml
   httparty
+  mongrel
   rails (= 3.0.1)
   sqlite3-ruby
   will_paginate (~> 3.0.pre)

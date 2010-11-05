@@ -12,6 +12,7 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem "compass"
   gem "fancy-buttons"
+  gem "mongrel"
 end
 
 # Use unicorn as the web server
