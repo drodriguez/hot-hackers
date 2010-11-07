@@ -2,14 +2,24 @@ require 'digest/sha1'
 
 class Match
   K_FACTOR = 32
+  DESVSTD  = 150
 
   attr_accessor :left_hacker, :right_hacker, :signature, :token
 
   def initialize
     num_hackers = Hacker.count
     left_offset = right_offset = rand(num_hackers)
-    right_offset = rand(num_hackers) until left_offset != right_offset
     self.left_hacker = Hacker.first :offset => left_offset
+
+    # Select a second hacker with a comparable level to the first
+    num_hackers, limit = 0, 0
+    while num_hackers == 0
+      limit += DESVSTD
+      num_hackers = Hacker.where('ranking > ? and ranking < ?',
+                                self.left_hacker.ranking - limit,
+                                self.left_hacker.ranking + limit).count
+    end
+    right_offset = rand(num_hackers) until left_offset != right_offset
     self.right_hacker = Hacker.first :offset => right_offset
 
     self.token = SecureRandom.hex(10)
