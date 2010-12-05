@@ -46,12 +46,11 @@ class Match
     e_right = q_right / denominator
 
     s_left, s_right = left_hacker.id == winner ? [1, 0] : [0, 1]
-    left_hacker.ranking = left_hacker.ranking + K_FACTOR * (s_left - e_left)
-    right_hacker.ranking = right_hacker.ranking + K_FACTOR * (s_right - e_right)
-
     Hacker.transaction do
-      left_hacker.save!
-      right_hacker.save!
+      Hacker.update_all(['ranking = ranking + ?', K_FACTOR * (s_left - e_left).to_i],
+                        :id => left_hacker.id)
+      Hacker.update_all(['ranking = ranking + ?', K_FACTOR * (s_right - e_right).to_i],
+                        :id => right_hacker.id)
     end
 
     left_hacker.id == winner ? left_hacker : right_hacker
